@@ -1,0 +1,43 @@
+node et npm - Node package module.
+-Mobile 320px à 767px
+-Tablette : 768px à 1023px
+-Desktop : 1024 et +
+
+- em : s'adapte à la taille du parent qui a été défini.
+- exemple : parent à 18px; enfant set à 1EM; = 18 px;  
+
+-rem : Base toi sur la base générale de l'HTML, je définis tous les éléments dans ma taille d'HTML
+Exemple : html{
+		font-size : 24px;
+}
+
+Enfant avec REM fera les valeurs X 24px.
+
+1REM = 24PX pour la font size
+
+- vh / vw / wmin / vmax
+- Pourcentage. 
+
+Orientation landscape
+Orientation portrait 
+
+100vw = la largeur de départ de l'écran.
+Déclaration initiale des éléments dans les HTML.
+faire un calcul avec la 1 rem et vw pour chaque éléments.
+
+Avec pourcentage ça se réfère au parent.
+
+Utiliser min et max width et min- et max height pour limiter les éléments.
+
+Travailler au maximum avec des SVG.
+
+webp - Format d'image pour le web attention nouveau format.
+
+Extension AVIF files outils qui permet d'alléger la taille de fichier.
+
+Le responsive ce n'est pas seulement le rendre accessible en mobile, mais aussi optimisé ! 
+
+Application web - > Dynamique avec ensemble d'action comme le tchat le mise à jour auto des commentaires.
+Site Web -> Statique, simplement affichage d'informations.
+PWA : Progressive web application : Raccourci installation dans le navigateur avec un raccourci qui se met dans ton téléphone
+Raccourci manifest.json

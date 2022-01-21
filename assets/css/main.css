@@ -1,0 +1,115 @@
+@import url('normalize.css'); /*d'abord import de normalize car on importe les polices ensuite donc on veut éviter les conflits*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap%27');
+
+:root {
+    --primary: #007FD4;
+    --secondary: #FE6A02;
+    --title: #474C68;
+    --text: #697694;
+    --background: #F9F9F9;
+    --font: 'lato', sans-serif;
+}
+html{
+    font-size: calc(16px + .2vw);
+}
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: var(--font);
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.wrapper{
+    /* width: 100%; */
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 1rem;
+}
+
+h1,h2,h3,h4{
+    color: var(--title);
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    margin: 0.2rem 0; /* un peu moins de 5*/
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+.technologies{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 50% et 50% de son wrapper qui le contient et pas de l'écran */
+    gap: 40px;
+}
+
+.technologies > div { /*Selection directe de l'enfant diV*/
+    display: flex;
+}
+
+.technologies > div .key{
+    background-color: var(--primary);
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.technologies > div .header{
+    display: flex;
+    align-items: center;
+}
+
+.technologies > div .header h3{
+    margin: 0;
+}
+
+.technologies > div > div {
+    margin-left: 10px;
+    padding-top: 15px;
+}
+
+.technologies > div p{
+    font-weight: 300;
+}
+
+.technologies > div img{
+    max-width: 200px;
+    transition:  .4s ease;
+}
+
+@media screen and (max-width: 991px){
+    .technologies{
+        grid-template-columns:  1fr;
+    }
+    .technologies > div img {
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .technologies > div img {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .technologies > div{
+        flex-direction: column;
+    }
+}
